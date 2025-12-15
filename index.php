@@ -6,7 +6,7 @@ date_default_timezone_set("Asia/Tashkent");
 define('education_coders','8398800703:AAHhCmdBlLdHvop4KvlehTbmbQLlzmC4jZk');
 
 $admin = "8125289524";
-$adminuser = "sealcontact";
+$adminuser = "@sealcontact";
 $botname = bot('getme',['bot'])->result->username;
 
 function bot($method,$datas=[]){
