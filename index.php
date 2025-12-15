@@ -1,7 +1,7 @@
 <?php
 ob_start();
 date_default_timezone_set('Asia/Tashkent'); 
-define('API_KEY',"5741362058:AAFKCVhK-BDFLGBYdopTRGl1ohzGxIvxDCk");
+define('API_KEY',"8398800703:AAHhCmdBlLdHvop4KvlehTbmbQLlzmC4jZk");
 $soat = date('H:i');
 $sana = date("d.m.Y");
 
