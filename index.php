@@ -14,7 +14,7 @@ define("AlijonovUz",
 getenv('APITOKEN'));
 
 $AlijonovUz = "8125289524";
-$admins = file_get_contents("tizim/admins.txt");
+$admins = file_get_contents("admins.txt");
 $admin = explode("\n", $admins);
 array_push($admin,$AlijonovUz);
 $bot = bot('getme',['bot'])->result->username;
@@ -65,7 +65,7 @@ return $str;
 function fineCoders($id){
 global $mid;
 $array = array("inline_keyboard");
-$get = file_get_contents("tizim/kanal.txt");
+$get = file_get_contents("kanal.txt");
 $ex = explode("\n",$get);
 if($get == null){
 return true;
@@ -185,69 +185,69 @@ $about = $alijonov->callback_query->from->about;
 $frid= $update->callback_query->from->id;
 $nameuz = "<a href='tg://user?id=$callfrid'>$callname $surname</a>";
 
-if(file_get_contents("tizim/holat.txt")){
+if(file_get_contents("holat.txt")){
 	}else{
-if(file_put_contents("tizim/holat.txt",'✅'));
+if(file_put_contents("holat.txt",'✅'));
 }
-if(file_get_contents("tizim/cvip.txt")){
+if(file_get_contents("cvip.txt")){
 	}else{
-if(file_put_contents("tizim/cvip.txt",'25000'));
+if(file_put_contents("cvip.txt",'25000'));
 }
-if(file_get_contents("tizim/cashback.txt")){
+if(file_get_contents("cashback.txt")){
 	}else{
-if(file_put_contents("tizim/cashback.txt",'3'));
+if(file_put_contents("cashback.txt",'3'));
 }
-if(file_get_contents("tizim/vazbonus.txt")){
+if(file_get_contents("vazbonus.txt")){
 	}else{
-		if(file_put_contents("tizim/vazbonus.txt","50000"));
+		if(file_put_contents("vazbonus.txt","50000"));
 }
-if(file_get_contents("tizim/admins.txt")){
+if(file_get_contents("admins.txt")){
 }else{
-	if(file_put_contents("tizim/admins.txt",$AlijonovUz));
+	if(file_put_contents("admins.txt",$AlijonovUz));
 }
-if(file_get_contents("tizim/taklif.txt")){
+if(file_get_contents("taklif.txt")){
 }else{
-	if(file_put_contents("tizim/taklif.txt",'500'));
+	if(file_put_contents("taklif.txt",'500'));
 }
-if(file_get_contents("tizim/valyuta.txt")){
+if(file_get_contents("valyuta.txt")){
 	}else{
-		if(file_put_contents("tizim/valyuta.txt","so'm"));
+		if(file_put_contents("valyuta.txt","so'm"));
 }
-if(file_get_contents("tizim/uset.txt")){
+if(file_get_contents("uset.txt")){
 	}else{
-if(file_put_contents("tizim/user.txt",'BuilderNet'));
+if(file_put_contents("user.txt",'BuilderNet'));
 }
-if(file_get_contents("tizim/bonusmin.txt")){
+if(file_get_contents("bonusmin.txt")){
 	}else{
-		if(file_put_contents("tizim/bonusmin.txt","2"));
+		if(file_put_contents("bonusmin.txt","2"));
 }
-if(file_get_contents("tizim/cc.txt")){
+if(file_get_contents("cc.txt")){
 	}else{
-		if(file_put_contents("tizim/cc.txt","50000"));
+		if(file_put_contents("cc.txt","50000"));
 }
-if(file_get_contents("tizim/fc.txt")){
+if(file_get_contents("fc.txt")){
 	}else{
-		if(file_put_contents("tizim/fc.txt","30000"));
+		if(file_put_contents("fc.txt","30000"));
 }
-if(file_get_contents("tizim/bonusmax.txt")){
+if(file_get_contents("bonusmax.txt")){
 	}else{
-		if(file_put_contents("tizim/bonusmax.txt","10"));
+		if(file_put_contents("bonusmax.txt","10"));
 }
-if(file_get_contents("tizim/bonusstatus.txt")){
+if(file_get_contents("bonusstatus.txt")){
 	}else{
-		if(file_put_contents("tizim/bonusstatus.txt","❌"));
+		if(file_put_contents("bonusstatus.txt","❌"));
 }
-if(file_get_contents("tizim/oraliqvaqt.txt")){
+if(file_get_contents("oraliqvaqt.txt")){
 	}else{
-		if(file_put_contents("tizim/oraliqvaqt.txt","1"));
+		if(file_put_contents("oraliqvaqt.txt","1"));
 }
-if(file_get_contents("tizim/bonusoladi.txt")){
+if(file_get_contents("bonusoladi.txt")){
 	}else{
-		if(file_put_contents("tizim/bonusoladi.txt","20"));
+		if(file_put_contents("bonusoladi.txt","20"));
 }
-if(file_get_contents("tizim/bonusmiqdor.txt")){
+if(file_get_contents("bonusmiqdor.txt")){
 	}else{
-		if(file_put_contents("tizim/bonusmiqdor.txt","100"));
+		if(file_put_contents("bonusmiqdor.txt","100"));
 }
 
 if(file_get_contents("tugma/key1.txt")){
@@ -318,42 +318,42 @@ $key6 = file_get_contents("tugma/key6.txt");
 $step = file_get_contents("step/$cid.step");
 $baza = file_get_contents("step/$cid.txt");
 $cid3 = file_get_contents("step/$cid.id");
-$qoida = file_get_contents("tizim/qoida.txt");
-$cashback = file_get_contents("tizim/cashback.txt");
-$cVip = file_get_contents("tizim/cvip.txt");
-$holat = file_get_contents("tizim/holat.txt");
-$promo = file_get_contents("tizim/kanal2.txt");
-$kanal = file_get_contents("tizim/kanal.txt");
-$card_cc = file_get_contents("tizim/cc.txt");
-$card_fc = file_get_contents("tizim/fc.txt");
-$vazi = file_get_contents("tizim/vazifachilar.txt");
-$vazbonus = file_get_contents("tizim/vazbonus.txt");
-$bonusmiqdor = file_get_contents("tizim/bonusmiqdor.txt");
-$taklif = file_get_contents("tizim/taklif.txt");
-$spc = file_get_contents("tizim/kodspc.txt");
-$promo = file_get_contents("tizim/kanal2.txt");
-$guruh1 = file_get_contents("tizim/guruh1.txt");
-$gr1_id = file_get_contents("tizim/gr1.txt");
-$gpul = file_get_contents("tizim/gpul.txt");
-$payme = file_get_contents("tizim/payme.txt");
-$paymeapi = file_get_contents("tizim/paymeapi.txt");
-$paymeparol = file_get_contents("tizim/paymeparol.txt");
-$check = file_get_contents("tizim/check.txt");
-$user = file_get_contents("tizim/user.txt");
-$valyuta = file_get_contents("tizim/valyuta.txt");
+$qoida = file_get_contents("qoida.txt");
+$cashback = file_get_contents("cashback.txt");
+$cVip = file_get_contents("cvip.txt");
+$holat = file_get_contents("holat.txt");
+$promo = file_get_contents("kanal2.txt");
+$kanal = file_get_contents("kanal.txt");
+$card_cc = file_get_contents("cc.txt");
+$card_fc = file_get_contents("fc.txt");
+$vazi = file_get_contents("vazifachilar.txt");
+$vazbonus = file_get_contents("vazbonus.txt");
+$bonusmiqdor = file_get_contents("bonusmiqdor.txt");
+$taklif = file_get_contents("taklif.txt");
+$spc = file_get_contents("kodspc.txt");
+$promo = file_get_contents("kanal2.txt");
+$guruh1 = file_get_contents("guruh1.txt");
+$gr1_id = file_get_contents("gr1.txt");
+$gpul = file_get_contents("gpul.txt");
+$payme = file_get_contents("payme.txt");
+$paymeapi = file_get_contents("paymeapi.txt");
+$paymeparol = file_get_contents("paymeparol.txt");
+$check = file_get_contents("check.txt");
+$user = file_get_contents("user.txt");
+$valyuta = file_get_contents("valyuta.txt");
 
-$kbonus = file_get_contents("tizim/kanal3.txt");
-$bonusmin = file_get_contents("tizim/bonusmin.txt");
-$bonusmax = file_get_contents("tizim/bonusmax.txt");
-$bonusoladi = file_get_contents("tizim/bonusoladi.txt");
-$bonustime = file_get_contents("tizim/bonustime.time");
-$bonusvaqti = file_get_contents("tizim/oraliqvaqt.txt");
-$bonusstatus = file_get_contents("tizim/bonusstatus.txt");
+$kbonus = file_get_contents("kanal3.txt");
+$bonusmin = file_get_contents("bonusmin.txt");
+$bonusmax = file_get_contents("bonusmax.txt");
+$bonusoladi = file_get_contents("bonusoladi.txt");
+$bonustime = file_get_contents("bonustime.time");
+$bonusvaqti = file_get_contents("oraliqvaqt.txt");
+$bonusstatus = file_get_contents("bonusstatus.txt");
 
 $kod = file_get_contents("step/kod.txt");
 $money = file_get_contents("step/money.txt");
 $post = file_get_contents("step/mid.txt");
-$date = file_get_contents("tizim/bonustime.time");
+$date = file_get_contents("bonustime.time");
 $post1 = file_get_contents("step/mesid.txt");
 
 $kategoriya = file_get_contents("bot/kategoriya.txt");
@@ -365,9 +365,9 @@ $tavsif = file_get_contents("bot/$kategoriya/$royxat/tavsif.txt");
 $til = file_get_contents("bot/$kategoriya/$royxat/til.txt");
 $versiya = file_get_contents("bot/$kategoriya/$royxat/versiya.txt");
 
-$turi = file_get_contents("tizim/turi.txt");
-$addition = file_get_contents("tizim/addition.txt");
-$wallet = file_get_contents("tizim/wallet.txt");
+$turi = file_get_contents("turi.txt");
+$addition = file_get_contents("addition.txt");
+$wallet = file_get_contents("wallet.txt");
 $test = file_get_contents("step/test.txt");
 
 $auto = file_get_contents("step/auto.txt");
@@ -1183,7 +1183,7 @@ exit();
 }
 }
 
-$turi = file_get_contents("tizim/turi.txt");
+$turi = file_get_contents("turi.txt");
 $more = explode("\n",$turi);
 $soni = substr_count($turi,"\n");
 $keys=[];
@@ -1291,7 +1291,7 @@ bot('answerCallbackQuery',[
 ]);
 exit();
 }else{
-file_put_contents("tizim/check.txt", "\n".$check_id,FILE_APPEND);
+file_put_contents("check.txt", "\n".$check_id,FILE_APPEND);
 $pul = mysqli_fetch_assoc(mysqli_query($connect,"SELECT*FROM kabinet WHERE user_id = $cid2"))['pul'];
 $pul2 = mysqli_fetch_assoc(mysqli_query($connect,"SELECT*FROM kabinet WHERE user_id = $cid2"))['pul2'];
 $a = $pul + $amount;
@@ -1346,8 +1346,8 @@ if($data == "orqa"){
 if(mb_stripos($data, "pay-")!==false){
 	$ex = explode("-",$data);
 	$tur = $ex[1];
-	$addition = file_get_contents("tizim/$tur/addition.txt");
-   $wallet = file_get_contents("tizim/$tur/wallet.txt");
+	$addition = file_get_contents("$tur/addition.txt");
+   $wallet = file_get_contents("$tur/wallet.txt");
    $fid = mysqli_fetch_assoc(mysqli_query($connect,"SELECT*FROM uid WHERE user_id = $cid2"))['uid'];
      bot('editMessageText',[
         'chat_id'=>$cid2,
@@ -2135,7 +2135,7 @@ bot('editMessageText',[
 
 
 if($data=="vazifa"){
-	$vazi = file_get_contents("tizim/vazifachilar.txt");
+	$vazi = file_get_contents("vazifachilar.txt");
 	if(mb_stripos($vazi,$cid2)!==false){
 	bot('answerCallbackQuery',[
 		'callback_query_id'=>$qid,
@@ -2227,7 +2227,7 @@ if($status == "Oddiy"){
 	}}
 
 if($data == "bajardimku"){
-	$vazi = file_get_contents("tizim/vazifachilar.txt");
+	$vazi = file_get_contents("vazifachilar.txt");
 	if(mb_stripos($vazi,$cid2)!==false){
 	bot('answerCallbackQuery',[
 		'callback_query_id'=>$qid,
@@ -2252,8 +2252,8 @@ if($status == "Premium"){
 ]
 ])
 ]);
-$vazi = file_get_contents("tizim/vazifachilar.txt");
-file_put_contents("tizim/vazifachilar.txt","$vazi\n$cid2");
+$vazi = file_get_contents("vazifachilar.txt");
+file_put_contents("vazifachilar.txt","$vazi\n$cid2");
 $pul = mysqli_fetch_assoc(mysqli_query($connect,"SELECT*FROM kabinet WHERE user_id = $cid2"))['pul'];
 $a = $pul + $vazbonus;
 mysqli_query($connect,"UPDATE kabinet SET pul = $a WHERE user_id = $cid2");
@@ -2506,7 +2506,7 @@ exit();
 
 
 if($data=="Limit_olish" and fineCoders($cid2)=="true"){
-$limit1 = file_get_contents("tizim/cc.txt");
+$limit1 = file_get_contents("cc.txt");
 $limit2 = $limit1 * 2;
 $limit3 = $limit1 * 3;
 $limit4 = $limit1 * 4;
@@ -2535,7 +2535,7 @@ exit();
 }
 
 if($data=="Fee" and fineCoders($cid2)=="true"){
-$limit1 = file_get_contents("tizim/fc.txt");;
+$limit1 = file_get_contents("fc.txt");;
 $limit2 = $limit1 * 2;
 $limit3 = $limit1 * 3;
 $limit4 = $limit1 * 4;
@@ -4988,7 +4988,7 @@ $md = bot('SendMessage',[
 ])->result->message_id;
 $end_time = round(microtime(true) * 1000);
 $ping = $end_time - $start_time;
-$vazi = substr_count("\n",file_get_contents("tizim/vazifachilar.txt"));
+$vazi = substr_count("\n",file_get_contents("vazifachilar.txt"));
 bot('sendMessage',[
 'chat_id'=>$cid,
 'text'=>"💡 <b>O'rtacha yuklanish:</b> <code>$ping</code>
@@ -5031,7 +5031,7 @@ bot('SendMessage',[
 ]);
 $end_time = round(microtime(true) * 1000);
 $ping = $end_time - $start_time;
-$vazi = substr_count("\n",file_get_contents("tizim/vazifachilar.txt"));
+$vazi = substr_count("\n",file_get_contents("vazifachilar.txt"));
 bot('editMessagetext',[
 'chat_id'=>$cid2,
 'message_id'=>$mid2,
@@ -5164,7 +5164,7 @@ exit();
 if(mb_stripos($data, "holat-")!==false){
 $ex = explode("-",$data);
 $xolat = $ex[1];
-file_put_contents("tizim/holat.txt",$xolat);
+file_put_contents("holat.txt",$xolat);
      bot('editMessageText',[
         'chat_id'=>$cid2,
        'message_id'=>$mid2,
@@ -5179,7 +5179,7 @@ file_put_contents("tizim/holat.txt",$xolat);
 ]);
 }
 
-$delturi = file_get_contents("tizim/turi.txt");
+$delturi = file_get_contents("turi.txt");
 $delmore = explode("\n",$delturi);
 $delsoni = substr_count($delturi,"\n");
 $key=[];
@@ -5222,7 +5222,7 @@ exit();
 }
 
 if($data == "hamyon"){
-$wallets = file_get_contents("tizim/turi.txt");
+$wallets = file_get_contents("turi.txt");
 if($wallets == null){
 bot('deleteMessage',[
 	'chat_id'=>$cid2,
@@ -5258,9 +5258,9 @@ exit();
 if(mb_stripos($data,"wallet-")!==false){
 	$ex = explode("-",$data);
 	$tur = $ex[1];
-$turi = file_get_contents("tizim/turi.txt");
+$turi = file_get_contents("turi.txt");
 	$k = str_replace("\n".$tur."","",$turi);
-   file_put_contents("tizim/turi.txt",$k);
+   file_put_contents("turi.txt",$k);
      bot('editMessageText',[
         'chat_id'=>$cid2,
        'message_id'=>$mid2,
@@ -5272,13 +5272,13 @@ $turi = file_get_contents("tizim/turi.txt");
 ]
 ])
 ]);
-deleteFolder("tizim/$tur");
+deleteFolder("$tur");
 }
 
 	/*$test = file_get_contents("step/test.txt");
    $k = str_replace("\n".$test."","",$turi);
-   file_put_contents("tizim/turi.txt",$k);
-deleteFolder("tizim/$test");
+   file_put_contents("turi.txt",$k);
+deleteFolder("$test");
 unlink("step/test.txt");
 exit();*/
 
@@ -5300,8 +5300,8 @@ if($data == "new"){
 if($step == "turi"){
 		if(in_array($cid,$admin)){
 	if(isset($text)){
-		mkdir("tizim/$text");
-file_put_contents("tizim/turi.txt","$turi\n$text");
+		mkdir("$text");
+file_put_contents("turi.txt","$turi\n$text");
 	file_put_contents("step/test.txt",$text);
 	bot('SendMessage',[
 	'chat_id'=>$cid,
@@ -5318,7 +5318,7 @@ file_put_contents("tizim/turi.txt","$turi\n$text");
 if($step == "wallet"){
 			if(in_array($cid,$admin)){
 	    if(is_numeric($text)=="true"){
-file_put_contents("tizim/$test/wallet.txt","$wallet\n$text");
+file_put_contents("$test/wallet.txt","$wallet\n$text");
 	bot('SendMessage',[
 	'chat_id'=>$cid,
 	'text'=>"<b>Ushbu to'lov tizimi orqali hisobni to'ldirish bo'yicha ma'lumotni yuboring:</b>
@@ -5342,7 +5342,7 @@ exit();
 if($step == "addition"){
 	if(in_array($cid,$admin)){
 	if(isset($text)){
-file_put_contents("tizim/$test/addition.txt","$addition\n$text");
+file_put_contents("$test/addition.txt","$addition\n$text");
 	bot('SendMessage',[
 	'chat_id'=>$cid,
 	'text'=>"<b>Yangi to'lov tizimi qo'shildi!</b>",
@@ -5441,9 +5441,9 @@ $ch_name = $get->result->title;
 $ch_user = $get->result->username;
 if(getAdmin($ch_user)== true){
 if($kanal == null){
-file_put_contents("tizim/kanal.txt",$text);
+file_put_contents("kanal.txt",$text);
 }else{
-file_put_contents("tizim/kanal.txt","\n".$text,FILE_APPEND);
+file_put_contents("kanal.txt","\n".$text,FILE_APPEND);
 }
 	bot('SendMessage',[
 	'chat_id'=>$cid,
@@ -5500,9 +5500,9 @@ if(mb_stripos($text, "@")!==false){
 if(mb_stripos($kanal, $text)!==false){
 $soni = substr_count($kanal,"@");
 if($soni != "1"){
-$files = file_get_contents("tizim/kanal.txt");
+$files = file_get_contents("kanal.txt");
 $file = str_replace("\n".$text."","",$files);
-file_put_contents("tizim/kanal.txt",$file);
+file_put_contents("kanal.txt",$file);
 	bot('SendMessage',[
 	'chat_id'=>$cid,
 	'text'=>"<b>$text o'chirildi.</b>",
@@ -5519,7 +5519,7 @@ exit();
 	'reply_markup'=>$panel
 ]);
 unlink("step/$cid.step");
-unlink("tizim/kanal.txt");
+unlink("kanal.txt");
 exit();
 }
 }else{
@@ -5584,7 +5584,7 @@ exit();
 if($step == "qoida"){
 if(in_array($cid,$admin)){
 if(isset($text)){		
-file_put_contents("tizim/qoida.txt",$text);
+file_put_contents("qoida.txt",$text);
 	bot('SendMessage',[
 	'chat_id'=>$cid,
 	'text'=>"<b>Muvaffaqiyatli o'zgartirildi!</b>",
@@ -6602,9 +6602,9 @@ Boshqa ID raqamni kiriting:",
 exit();
 }elseif((mb_stripos($admins, $text)!==false) or ($text != $AlijonovUz)){
 if($admins == null){
-file_put_contents("tizim/admins.txt",$text);
+file_put_contents("admins.txt",$text);
 }else{
-file_put_contents("tizim/admins.txt","\n".$text,FILE_APPEND);
+file_put_contents("admins.txt","\n".$text,FILE_APPEND);
 }
 bot('SendMessage',[
 'chat_id'=>$AlijonovUz,
@@ -6654,9 +6654,9 @@ Boshqa ID raqamni kiriting:",
 ]);
 exit();
 }elseif((mb_stripos($admins, $text)!==false) or ($text != $AlijonovUz)){
-$files = file_get_contents("tizim/admins.txt");
+$files = file_get_contents("admins.txt");
 $file = str_replace("\n".$text."","",$files);
-file_put_contents("tizim/admins.txt",$file);
+file_put_contents("admins.txt",$file);
 bot('SendMessage',[
 'chat_id'=>$AlijonovUz,
 'text'=>"<code>$text</code> <b>adminlar ro'yxatidan olib tashlandi!</b>",
@@ -6726,7 +6726,7 @@ $types = $get->result->type;
 $ch_name = $get->result->title;
 $ch_user = $get->result->username;
 if(getAdmin($ch_user)== true){
-file_put_contents("tizim/kanal2.txt","@$ch_user");
+file_put_contents("kanal2.txt","@$ch_user");
 bot('SendMessage',[
 'chat_id'=>$cid,
 'text'=>"<b>Qabul qilindi!</b>",
@@ -6782,7 +6782,7 @@ $types = $get->result->type;
 $ch_name = $get->result->title;
 $ch_user = $get->result->username;
 if(getAdmin($ch_user)== true){
-file_put_contents("tizim/kanal3.txt","@$ch_user");
+file_put_contents("kanal3.txt","@$ch_user");
 bot('SendMessage',[
 'chat_id'=>$cid,
 'text'=>"<b>Qabul qilindi!</b>",
@@ -6838,8 +6838,8 @@ $ch_name = $get->result->title;
 $ch_user = $get->result->username;
 $ch_id = $get->result->id;
 if(getAdmin($ch_user)== true){
-file_put_contents("tizim/guruh1.txt","@$ch_user");
-file_put_contents("tizim/gr1.txt","$ch_id");
+file_put_contents("guruh1.txt","@$ch_user");
+file_put_contents("gr1.txt","$ch_id");
 bot('SendMessage',[
 'chat_id'=>$cid,
 'text'=>"<b>Qabul qilindi!</b>",
@@ -6968,9 +6968,9 @@ if($data == "avtopay"){
 }
 
 if($data == "delpay"){
-	unlink("tizim/payme.txt");
-	unlink("tizim/paymeapi.txt");
-	unlink("tizim/paymeparol.txt");
+	unlink("payme.txt");
+	unlink("paymeapi.txt");
+	unlink("paymeparol.txt");
 	bot('editMessageText',[
 	'chat_id'=>$cid2,
 	'message_id'=>$mid2,
@@ -7004,7 +7004,7 @@ exit();
 if($step == "autopay"){
 	if(in_array($cid, $admin)){
 		if(isset($text)){
-			file_put_contents("tizim/payme.txt", $text);
+			file_put_contents("payme.txt", $text);
 			bot('sendMessage',[
 			'chat_id'=>$cid,
 			'text'=>"<b>Qabul qilindi!</b>",
@@ -7035,7 +7035,7 @@ exit();
 if($step == "paymeparol"){
 	if(in_array($cid, $admin)){
 		if(isset($text)){
-			file_put_contents("tizim/paymeparol.txt", $text);
+			file_put_contents("paymeparol.txt", $text);
 			bot('sendMessage',[
 			'chat_id'=>$cid,
 			'text'=>"<b>Qabul qilindi!</b>",
@@ -7066,7 +7066,7 @@ exit();
 if($step == "paymeapi"){
 	if(in_array($cid, $admin)){
 		if(isset($text)){
-			file_put_contents("tizim/paymeapi.txt", $text);
+			file_put_contents("paymeapi.txt", $text);
 			bot('sendMessage',[
 			'chat_id'=>$cid,
 			'text'=>"<b>Qabul qilindi!</b>",
@@ -7179,7 +7179,7 @@ if($data == "valyuta"){
 if($step == "valyuta"){
 		if(in_array($cid,$admin)){
 	if(isset($text)){
-	file_put_contents("tizim/valyuta.txt",$text);
+	file_put_contents("valyuta.txt",$text);
 	bot('SendMessage',[
 	'chat_id'=>$cid,
 	'text'=>"<b>Muvaffaqiyatli o'zgartirildi!</b>",
@@ -7210,7 +7210,7 @@ if($data == "pprice"){
 if($step == "pprice"){
 		if(in_array($cid,$admin)){
 			if(isset($text) and is_numeric($text)==true){
-	file_put_contents("tizim/cvip.txt",$text);
+	file_put_contents("cvip.txt",$text);
 	bot('SendMessage',[
 	'chat_id'=>$cid,
 	'text'=>"<b>Muvaffaqiyatli o'zgartirildi!</b>",
@@ -7249,7 +7249,7 @@ if($data == "price_cc"){
 if($step == "price_cc"){
 		if(in_array($cid,$admin)){
 			if(isset($text) and is_numeric($text)==true){
-	file_put_contents("tizim/cc.txt",$text);
+	file_put_contents("cc.txt",$text);
 	bot('SendMessage',[
 	'chat_id'=>$cid,
 	'text'=>"<b>Muvaffaqiyatli o'zgartirildi!</b>",
@@ -7288,7 +7288,7 @@ if($data == "price_fc"){
 if($step == "price_fc"){
 		if(in_array($cid,$admin)){
 			if(isset($text) and is_numeric($text)==true){
-	file_put_contents("tizim/fc.txt",$text);
+	file_put_contents("fc.txt",$text);
 	bot('SendMessage',[
 	'chat_id'=>$cid,
 	'text'=>"<b>Muvaffaqiyatli o'zgartirildi!</b>",
@@ -7329,7 +7329,7 @@ if($data == "vzprice"){
 if($step == "vzprice"){
 		if(in_array($cid,$admin)){
 			if(isset($text) and is_numeric($text)==true){
-	file_put_contents("tizim/vazbonus.txt",$text);
+	file_put_contents("vazbonus.txt",$text);
 	bot('SendMessage',[
 	'chat_id'=>$cid,
 	'text'=>"<b>Muvaffaqiyatli o'zgartirildi!</b>",
@@ -7368,7 +7368,7 @@ if($data == "admin"){
 if($step == "admin"){
 		if(in_array($cid,$admin)){
 	if(isset($text)){
-        file_put_contents("tizim/user.txt",$text);
+        file_put_contents("user.txt",$text);
 	bot('SendMessage',[
 	'chat_id'=>$cid,
 	'text'=>"<b>Muvaffaqiyatli o'zgartirildi!</b>",
@@ -7414,7 +7414,7 @@ if($data == "boprice"){
 if($step == "boprice"){
 		if(in_array($cid,$admin)){
 			if(isset($text) and is_numeric($text)==true){
-	file_put_contents("tizim/bonusmiqdor.txt",$text);
+	file_put_contents("bonusmiqdor.txt",$text);
 	bot('SendMessage',[
 	'chat_id'=>$cid,
 	'text'=>"<b>Muvaffaqiyatli o'zgartirildi!</b>",
@@ -7453,7 +7453,7 @@ if($data == "cashback"){
 if($step == "cashprice"){
 		if(in_array($cid,$admin)){
 			if(isset($text) and is_numeric($text)==true){
-	file_put_contents("tizim/cashback.txt",$text);
+	file_put_contents("cashback.txt",$text);
 	bot('SendMessage',[
 	'chat_id'=>$cid,
 	'text'=>"<b>Muvaffaqiyatli o'zgartirildi!</b>",
@@ -7477,7 +7477,7 @@ if($step == "cashprice"){
 if($step == "taklif"){
 		if(in_array($cid,$admin)){
 	if(isset($text)){
-	file_put_contents("tizim/taklif.txt",$text);
+	file_put_contents("taklif.txt",$text);
 	bot('SendMessage',[
 	'chat_id'=>$cid,
 	'text'=>"<b>Muvaffaqiyatli o'zgartirildi!</b>",
@@ -7508,7 +7508,7 @@ if($data == "gpul"){
 if($step == "gpul"){
 		if(in_array($cid,$admin)){
 	if(isset($text)){
-	file_put_contents("tizim/gpul.txt",$text);
+	file_put_contents("gpul.txt",$text);
 	bot('SendMessage',[
 	'chat_id'=>$cid,
 	'text'=>"<b>Muvaffaqiyatli o'zgartirildi!</b>",
@@ -7539,7 +7539,7 @@ if($data == "minbonus"){
 if($step == "bonusmin"){
 		if(in_array($cid,$admin)){
 	if(isset($text)){
-	file_put_contents("tizim/bonusmin.txt",$text);
+	file_put_contents("bonusmin.txt",$text);
 	bot('SendMessage',[
 	'chat_id'=>$cid,
 	'text'=>"<b>Muvaffaqiyatli o'zgartirildi!</b>",
@@ -7570,7 +7570,7 @@ if($data == "maxbonus"){
 if($step == "bonusmax"){
 		if(in_array($cid,$admin)){
 	if(isset($text)){
-	file_put_contents("tizim/bonusmax.txt",$text);
+	file_put_contents("bonusmax.txt",$text);
 	bot('SendMessage',[
 	'chat_id'=>$cid,
 	'text'=>"<b>Muvaffaqiyatli o'zgartirildi!</b>",
@@ -7601,7 +7601,7 @@ if($data == "oladib"){
 if($step == "oladib"){
 		if(in_array($cid,$admin)){
 	if(isset($text)){
-	file_put_contents("tizim/bonusoladi.txt",$text);
+	file_put_contents("bonusoladi.txt",$text);
 	bot('SendMessage',[
 	'chat_id'=>$cid,
 	'text'=>"<b>Muvaffaqiyatli o'zgartirildi!</b>",
@@ -7632,7 +7632,7 @@ if($data == "bonustime"){
 if($step == "bonustime"){
 		if(in_array($cid,$admin)){
 	if(isset($text)){
-	file_put_contents("tizim/bonustime.time",$text);
+	file_put_contents("bonustime.time",$text);
 	bot('SendMessage',[
 	'chat_id'=>$cid,
 	'text'=>"<b>Muvaffaqiyatli o'zgartirildi!</b>",
@@ -7690,7 +7690,7 @@ exit();
 if(mb_stripos($data, "statusbonus-")!==false){
 $ex = explode("-",$data);
 $bonusstatus = $ex[1];
-file_put_contents("tizim/bonusstatus.txt",$bonusstatus);
+file_put_contents("bonusstatus.txt",$bonusstatus);
      bot('editMessageText',[
         'chat_id'=>$cid2,
        'message_id'=>$mid2,
@@ -7706,10 +7706,10 @@ file_put_contents("tizim/bonusstatus.txt",$bonusstatus);
 }
 
 if($soat == $bonustime){
-$status = file_get_contents("tizim/bonusstatus.txt");
+$status = file_get_contents("bonusstatus.txt");
 if($status == "✅"){
 $soat = date('H:i',strtotime('+1 hour'));
-file_put_contents("tizim/bonustime.time",$soat);
+file_put_contents("bonustime.time",$soat);
 bot('deleteMessage',[
 'chat_id'=>"$kbonus",
 'message_id'=>$post1,
