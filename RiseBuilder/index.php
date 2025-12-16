@@ -9,7 +9,8 @@ date_Default_timezone_set('Asia/Tashkent');
 
 //Manba @FineCoders & @AlijonovUz
 
-define("AlijonovUz",'APITOKEN');
+define("AlijonovUz", getenv('BOT_TOKEN'));
+
 
 $AlijonovUz = "5813831511";
 $admins = file_get_contents("tizim/admins.txt");
@@ -7923,3 +7924,4 @@ file_get_contents("https://api.telegram.org/bot".AlijonovUz."/sendMessage?chat_i
 //Manba @FineCoders & @AlijonovUz
 
 ?>
+
