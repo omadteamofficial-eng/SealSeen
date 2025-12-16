@@ -2902,35 +2902,35 @@ if($get){
     $kod = str_replace("ADMIN_ID", "$cid2", $kod);
 file_put_contents("bots/$ismi/index.php","$kod");
 if($turi=="MakerBot"){
-file_put_contents("bots/$ismi/botlar/SarmoyaBot.php",file_get_contents("botlar/SarmoyaBot.php"));
-file_put_contents("bots/$ismi/botlar/ObunachiBot.php",file_get_contents("botlar/ObunachiBot.php"));
-file_put_contents("bots/$ismi/botlar/SpecialSMM Lite.php",file_get_contents("botlar/SpecialSMM Lite.php"));
-file_put_contents("bots/$ismi/botlar/PulBot Lite.php",file_get_contents("botlar/PulBot Lite.php"));
-file_put_contents("bots/$ismi/botlar/TurfaBot.php",file_get_contents("botlar/TurfaBot.php"));
-file_put_contents("bots/$ismi/botlar/GramAPIBot.php",file_get_contents("botlar/GramAPIBot.php"));
-file_put_contents("bots/$ismi/botlar/AvtoNakrutka.php",file_get_contents("botlar/AvtoNakrutka.php"));
-file_put_contents("bots/$ismi/botlar/Obunachi Lite.php",file_get_contents("botlar/Obunachi Lite.php"));
-file_put_contents("bots/$ismi/botlar/Reklamachi.php",file_get_contents("botlar/Reklamachi.php"));
-file_put_contents("bots/$ismi/botlar/SpecialMember.php",file_get_contents("botlar/SpecialMember.php"));
-file_put_contents("bots/$ismi/botlar/NamozVAQT.php",file_get_contents("botlar/NamozVAQT.php"));
-file_put_contents("bots/$ismi/botlar/AutoNumber.php",file_get_contents("botlar/AutoNumber.php"));
-file_put_contents("bots/$ismi/botlar/VideoDown.php",file_get_contents("botlar/VideoDown.php"));
-file_put_contents("bots/$ismi/botlar/KonstruktorBot.php",file_get_contents("botlar/KonstruktorBot.php"));
+file_put_contents("bots/$ismi/botlar/SarmoyaBot.php",file_get_contents("SarmoyaBot.php"));
+file_put_contents("bots/$ismi/botlar/ObunachiBot.php",file_get_contents("ObunachiBot.php"));
+file_put_contents("bots/$ismi/botlar/SpecialSMM Lite.php",file_get_contents("SpecialSMM Lite.php"));
+file_put_contents("bots/$ismi/botlar/PulBot Lite.php",file_get_contents("PulBot Lite.php"));
+file_put_contents("bots/$ismi/botlar/TurfaBot.php",file_get_contents("TurfaBot.php"));
+file_put_contents("bots/$ismi/botlar/GramAPIBot.php",file_get_contents("GramAPIBot.php"));
+file_put_contents("bots/$ismi/botlar/AvtoNakrutka.php",file_get_contents("AvtoNakrutka.php"));
+file_put_contents("bots/$ismi/botlar/Obunachi Lite.php",file_get_contents("Obunachi Lite.php"));
+file_put_contents("bots/$ismi/botlar/Reklamachi.php",file_get_contents("Reklamachi.php"));
+file_put_contents("bots/$ismi/botlar/SpecialMember.php",file_get_contents("SpecialMember.php"));
+file_put_contents("bots/$ismi/botlar/NamozVAQT.php",file_get_contents("NamozVAQT.php"));
+file_put_contents("bots/$ismi/botlar/AutoNumber.php",file_get_contents("AutoNumber.php"));
+file_put_contents("bots/$ismi/botlar/VideoDown.php",file_get_contents("VideoDown.php"));
+file_put_contents("bots/$ismi/botlar/KonstruktorBot.php",file_get_contents("KonstruktorBot.php"));
 #mini
 mkdir("bots/$ismi/mini");
-file_put_contents("bots/$ismi/mini/SarmoyaBot.php",file_get_contents("mini/SarmoyaBot.php"));
-file_put_contents("bots/$ismi/mini/ObunachiBot.php",file_get_contents("mini/ObunachiBot.php"));
-file_put_contents("bots/$ismi/mini/SpecialSMM Lite.php",file_get_contents("mini/SpecialSMM Lite.php"));
-file_put_contents("bots/$ismi/mini/PulBot Lite.php",file_get_contents("mini/PulBot Lite.php"));
-file_put_contents("bots/$ismi/mini/TurfaBot.php",file_get_contents("mini/TurfaBot.php"));
-file_put_contents("foydalanuvchi/$cid2/$ex/mini/GramAPIBot.php",file_get_contents("mini/GramAPIBot.php"));
-file_put_contents("bots/$ismi/mini/AvtoNakrutka.php",file_get_contents("mini/AvtoNakrutka.php"));
-file_put_contents("bots/$ismi/mini/Obunachi Lite.php",file_get_contents("mini/Obunachi Lite.php"));
-file_put_contents("bots/$ismi/mini/Reklamachi.php",file_get_contents("mini/Reklamachi.php"));
-file_put_contents("bots/$ismi/mini/SpecialMember.php",file_get_contents("mini/SpecialMember.php"));
-file_put_contents("bots/$ismi/mini/NamozVAQT.php",file_get_contents("mini/NamozVAQT.php"));
-file_put_contents("bots/$ismi/mini/AutoNumber.php",file_get_contents("mini/AutoNumber.php"));
-file_put_contents("bots/$ismi/mini/VideoDown.php",file_get_contents("mini/VideoDown.php"));
+file_put_contents("bots/$ismi/mini/SarmoyaBot.php",file_get_contents("miniSarmoyaBot.php"));
+file_put_contents("bots/$ismi/mini/ObunachiBot.php",file_get_contents("miniObunachiBot.php"));
+file_put_contents("bots/$ismi/mini/SpecialSMM Lite.php",file_get_contents("miniSpecialSMM Lite.php"));
+file_put_contents("bots/$ismi/mini/PulBot Lite.php",file_get_contents("miniPulBot Lite.php"));
+file_put_contents("bots/$ismi/mini/TurfaBot.php",file_get_contents("miniTurfaBot.php"));
+file_put_contents("foydalanuvchi/$cid2/$ex/mini/GramAPIBot.php",file_get_contents("miniGramAPIBot.php"));
+file_put_contents("bots/$ismi/mini/AvtoNakrutka.php",file_get_contents("miniAvtoNakrutka.php"));
+file_put_contents("bots/$ismi/mini/Obunachi Lite.php",file_get_contents("miniObunachi Lite.php"));
+file_put_contents("bots/$ismi/mini/Reklamachi.php",file_get_contents("miniReklamachi.php"));
+file_put_contents("bots/$ismi/mini/SpecialMember.php",file_get_contents("miniSpecialMember.php"));
+file_put_contents("bots/$ismi/mini/NamozVAQT.php",file_get_contents("miniNamozVAQT.php"));
+file_put_contents("bots/$ismi/mini/AutoNumber.php",file_get_contents("miniAutoNumber.php"));
+file_put_contents("bots/$ismi/mini/VideoDown.php",file_get_contents("miniVideoDown.php"));
 }
 bot('editMessageText',[
         'chat_id'=>$cid2,
